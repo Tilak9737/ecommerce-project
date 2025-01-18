@@ -1,0 +1,36 @@
+/* Header Styles */
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 1rem;
+  }
+  
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header h1 {
+    font-size: 1.5rem;
+  }
+  
+  header ul {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  header li {
+    display: inline;
+  }
+  
+  header a {
+    color: white;
+    font-weight: bold;
+    transition: color 0.2s;
+  }
+  
+  header a:hover {
+    color: #ffd700;
+  }
+  
