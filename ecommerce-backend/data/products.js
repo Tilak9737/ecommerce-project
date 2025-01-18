@@ -1,21 +1,24 @@
 const products = [
     {
       id: 1,
-      name: 'Product 1',
-      price: 50,
-      description: 'This is a sample product.',
+      name: "Smartphone",
+      description: "High-quality smartphone with amazing features.",
+      price: 699,
+      image: "https://via.placeholder.com/150",
     },
     {
       id: 2,
-      name: 'Product 2',
-      price: 30,
-      description: 'This is another sample product.',
+      name: "Headphones",
+      description: "Noise-canceling over-ear headphones.",
+      price: 199,
+      image: "https://via.placeholder.com/150",
     },
     {
       id: 3,
-      name: 'Product 3',
-      price: 40,
-      description: 'This is yet another sample product.',
+      name: "Laptop",
+      description: "Lightweight and powerful laptop for professionals.",
+      price: 999,
+      image: "https://via.placeholder.com/150",
     },
   ];
   
