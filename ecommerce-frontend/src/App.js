@@ -1,16 +1,20 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 import HomePage from "./pages/HomePage";
-import Header from "./components/Header"; // Assuming you have a Header component
-import Footer from "./components/Footer"; // Assuming you have a Footer component
 
-function App() {
+const App = () => {
   return (
-    <div>
+    <Router>
       <Header />
-      <HomePage />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        {/* Future routes for About, Contact, and Product Details */}
+      </Routes>
       <Footer />
-    </div>
+    </Router>
   );
-}
+};
 
 export default App;

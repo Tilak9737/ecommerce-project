@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import ProductCard from "../components/ProductCard";
 import "../styles/HomePage.css";
 
 const HomePage = () => {
@@ -21,10 +20,14 @@ const HomePage = () => {
 
   return (
     <div className="homepage">
-      <h1>Products</h1>
-      <div className="product-list">
+      <h1>Our Products</h1>
+      <div className="product-grid">
         {products.map((product) => (
-          <ProductCard key={product.id} product={product} />
+          <div key={product.id} className="product-card">
+            <img src={product.image} alt={product.name} className="product-image" />
+            <h2>{product.name}</h2>
+            <p>${product.price}</p>
+          </div>
         ))}
       </div>
     </div>
